@@ -7,11 +7,11 @@ Download the latest version of **Directory Cleanser** from [releases](https://gi
 
 ## Statistics 
 
-| Section  |  Count | Time  | Average File Size  | Log Size  |
-|---|---|---|---|---|
-| Removing Files | 539,476 | 0h17m22s | 700KB | 39,229KB |
-| Moving Files | 11,948 | 0h0m50s | 220KB | 840KB |
-| Removing Files | 11,948 | 0h0m19s | 220KB | 875KB |
+| Section  |  Count | Time  | Average File Size  | Log Size  | Test Version  | Test Date  |
+|---|---|---|---|---|---|---|
+| Removing Files | 539,476 | 0h17m22s | 700KB | 39,229KB | 1.0.0.0 | 24-12-2019 |
+| Moving Files | 11,948 | 0h0m50s | 220KB | 840KB | 1.0.0.0 | 24-12-2019 |
+| Removing Files | 11,948 | 0h0m19s | 220KB | 875KB | 1.0.0.0 | 24-12-2019 |
 
 Based on the above numbers, **Directory Cleanser** can remove between 517.73 and 628.84 files a second, and move around 238 files a second.
 
