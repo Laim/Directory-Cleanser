@@ -1,9 +1,9 @@
 # Directory Cleanser
-Directory Cleanser is a small .NET tool allowing you to delete thousands of files within seconds and move files between two directories. 
+**Directory Cleanser** is a small .NET tool allowing you to delete thousands of files within seconds and move files between two directories. 
 
 ## Getting Started
 
-Download the latest version of *Directory Cleanser* from [releases](https://github.com/Laim/Directory-Cleanser/releases), unzip and run the executable.  Done!
+Download the latest version of **Directory Cleanser** from [releases](https://github.com/Laim/Directory-Cleanser/releases), unzip and run the executable.  Done!
 
 ## Statistics 
 
@@ -12,6 +12,8 @@ Download the latest version of *Directory Cleanser* from [releases](https://gith
 | Removing Files | 539,476 | 0h17m22s | 700KB | 39,229KB |
 | Moving Files | 11,948 | 0h0m50s | 220KB | 840KB |
 | Removing Files | 11,948 | 0h0m19s | 220KB | 875KB |
+
+Based on the above numbers, **Directory Cleanser** can remove between 517.73 and 628.84 files a second, and move around 238 files a second.
 
 ## Contributing
 
