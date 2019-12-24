@@ -7,12 +7,11 @@ Download the latest version of *Directory Cleanser* from [releases](https://gith
 
 ## Statistics 
 
-| Section        | Count        | Time  | Average File Size | Log Size |
-| ------------- |:-------------:| -----:|
-| Removing Files | 539,476 | 0h0m0s | 700KB | 39,229KB |
+| Section  |  Count | Time  | Average File Size  | Log Size  |
+|---|---|---|---|---|
+| Removing Files | 539,476 | 0h17m22s | 700KB | 39,229KB |
 | Moving Files | 11,948 | 0h0m50s | 220KB | 840KB |
 | Removing Files | 11,948 | 0h0m19s | 220KB | 875KB |
-
 
 ## Contributing
 
