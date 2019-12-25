@@ -40,17 +40,10 @@ Public Class frmFileRemover
     End Function
 
     Private Sub btnGenerateStats_Click(sender As Object, e As EventArgs) Handles btnGenerateStats.Click
-        Dim Counter As Integer = 0
-        txtFolderStats.Text = ""
         Try
-            For Each file As IO.FileInfo In New IO.DirectoryInfo(txtDirectory.Text).GetFiles()
-                If (Now - file.CreationTime).Days > txtDate.Text Then
-                    If file.Extension = "." + txtFileType.Text Or txtFileType.Text = "" Then
-                        Counter += 1
-                    End If
-                End If
-            Next
-            txtFolderStats.Text = "File Count : " + Counter.ToString
+            txtFolderStats.Text = ""
+            txtFolderStats.Text = txtFolderStats.Text + "Directry File Count : " + DirFileCount(txtDirectory.Text, txtFileType.Text) + vbCrLf
+            txtFolderStats.Text = txtFolderStats.Text + "Directory File Size : " + DirFileSize(txtDirectory.Text, txtFileType.Text) + " bytes" + vbCrLf
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
