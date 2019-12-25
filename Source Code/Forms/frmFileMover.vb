@@ -89,7 +89,6 @@ Public Class frmFileMover
     End Sub
 
     Private Sub txtCountToMove_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCountToMove.KeyPress
-
         'This just makes it so you can only input numbers, code from https://stackoverflow.com/a/9971500
         If Asc(e.KeyChar) <> 8 Then
             If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
