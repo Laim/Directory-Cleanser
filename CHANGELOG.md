@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1.0] - 2019-12-27
+
+### Added
+
+- Nothing has been removed in this release
+
+### Changed
+
+- Fixed [#1](https://github.com/Laim/Directory-Cleanser/issues/1) - InvalidCastException on FileMover and FileRemover
+
+### Removed
+
+- Nothing has been removed in this release
+
 ## [1.1.0.0] - 2019-12-25
 
 ### Added
