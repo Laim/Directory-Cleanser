@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Nothing has been removed in this release
+- Nothing has been added in this release
 
 ### Changed
 
