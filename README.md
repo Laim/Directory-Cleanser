@@ -3,7 +3,7 @@
 
 ## Getting Started
 
-Download the latest version of **Directory Cleanser** from [releases](https://github.com/Laim/Directory-Cleanser/releases), unzip and run the executable.  Done!
+Download the latest version of **Directory Cleanser** from [releases](https://github.com/Laim/Directory-Cleanser/releases), unzip and run the executable as Administrator.  Done!
 
 ## Statistics 
 
