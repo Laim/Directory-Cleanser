@@ -43,7 +43,7 @@ Public Class frmFileMover
         Try
             txtFolderStats.Text = ""
             txtFolderStats.Text = "Old Directry File Count : " + DirFileCount(txtOldDirectory.Text, txtFileType.Text).ToString + vbCrLf
-            txtFolderStats.Text = txtFolderStats.Text + "Old Directory File Size : " + DirFileSize(txtOldDirectory.Text, txtFileType.Text).ToString + " bytes" + vbCrLf
+            txtFolderStats.Text = txtFolderStats.Text + "Old Directory File Size : " + DirFileSize(txtOldDirectory.Text, txtFileType.Text).ToString + vbCrLf
             txtFolderStats.Text = txtFolderStats.Text + "New Directry Current File Count : " + DirFileCount(txtNewDirectory.Text, txtFileType.Text).ToString + vbCrLf
             txtFolderStats.Text = txtFolderStats.Text + "New Directory Current File Size : " + DirFileSize(txtNewDirectory.Text, txtFileType.Text).ToString + " bytes"
         Catch ex As Exception

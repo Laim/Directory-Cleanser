@@ -43,7 +43,7 @@ Public Class frmFileRemover
         Try
             txtFolderStats.Text = ""
             txtFolderStats.Text = txtFolderStats.Text + "Directry File Count : " + DirFileCount(txtDirectory.Text, txtFileType.Text).ToString + vbCrLf
-            txtFolderStats.Text = txtFolderStats.Text + "Directory File Size : " + DirFileSize(txtDirectory.Text, txtFileType.Text).ToString + " bytes" + vbCrLf
+            txtFolderStats.Text = txtFolderStats.Text + "Directory File Size : " + DirFileSize(txtDirectory.Text, txtFileType.Text).ToString + vbCrLf
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try

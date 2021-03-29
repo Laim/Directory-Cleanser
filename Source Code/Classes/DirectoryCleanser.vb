@@ -16,14 +16,14 @@
     End Function
 
     Public Shared Function DirFileSize(ByVal DirPath As String, ByVal FileType As String)
-        Dim FileSize As Integer = 0
+        Dim FileSize As Int64 = 0
         For Each item As IO.FileInfo In New IO.DirectoryInfo(DirPath).GetFiles()
             If item.Extension = "." + FileType Or FileType = "" Then
                 FileSize += item.Length
             End If
         Next
 
-        Return FileSize
+        Return FormatFileSize(FileSize)
     End Function
 
     Public Shared Function DirFileList(ByVal DirPath As String, ByVal FileType As String)
@@ -37,4 +37,45 @@
 
         Return FileList.ToString
     End Function
+
+    '' Credit: https://stackoverflow.com/a/39449400
+    Public Shared Function FormatFileSize(ByVal lngFileSize As Long) As String
+
+        Dim x As Int64 : x = 0
+        Dim Suffix As String : Suffix = ""
+        Dim Result As Single : Result = lngFileSize
+
+        Do Until Int(Result) < 1000
+            x = x + 1
+            Result = Result / 1024
+        Loop
+
+        Result = Math.Round(Result, 2)
+
+        Select Case x
+            Case 0
+                Suffix = "Bytes"
+            Case 1 'KiloBytes
+                Suffix = "KB"
+            Case 2 'MegaBytes
+                Suffix = "MB"
+            Case 3 'GigaBytes
+                Suffix = "GB"
+            Case 4 'TeraBytes
+                Suffix = "TB"
+            Case 5 'PetaBytes
+                Suffix = "PB"
+            Case 6 'ExaBytes
+                Suffix = "EB"
+            Case 7 'ZettaBytes
+                Suffix = "ZB"
+            Case 8 'YottaBytes
+                Suffix = "YB"
+            Case Else
+                Suffix = "Too big to compute :)"
+        End Select
+
+        FormatFileSize = Format(Result, "#,##0.00") & " " & Suffix
+
+    End Function 'FormatFileSize
 End Class
